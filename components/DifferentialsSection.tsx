@@ -28,7 +28,7 @@ export default function DifferentialsSection() {
               id="differentials-title"
               className="font-playfair text-3xl md:text-4xl font-bold text-dark mb-8 leading-tight"
             >
-              Por que escolher a Rô Terapia da Dor?
+              Por que escolher a Rô Espaço Terapêutico?
             </h2>
 
             <ul className="space-y-3.5 mb-10" role="list">
@@ -74,7 +74,7 @@ export default function DifferentialsSection() {
                 />
                 {/* Mobile */}
                 <Image
-                  src="/images/hero-mobile.webp"
+                  src="/images/rosangela.webp"
                   alt="Rosangela da Silva — massoterapeuta com 11 anos de experiência"
                   fill
                   className="object-cover block md:hidden"

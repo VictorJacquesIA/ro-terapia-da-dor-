@@ -24,7 +24,7 @@ export default function SolutionSection() {
           </h2>
 
           <p className="text-lg text-muted leading-relaxed mb-8">
-            Na Rô Terapia da Dor, cada sessão é pensada de forma individual,
+            Na Rô Espaço Terapêutico, cada sessão é pensada de forma individual,
             respeitando suas necessidades, seu corpo e seus objetivos. O
             atendimento combina técnicas de massoterapia, terapias manuais e
             cuidado integrativo para promover relaxamento, bem-estar e

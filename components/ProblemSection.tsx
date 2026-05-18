@@ -22,24 +22,24 @@ export default function ProblemSection() {
           />
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
           {problemCards.map((card, index) => {
             const Icon = iconMap[card.iconName] ?? Activity;
             return (
               <AnimateOnScroll key={card.title} delay={index + 1} className="h-full">
-                <div className="group h-full bg-cream border border-border rounded-3xl p-7 hover:bg-white hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 cursor-default">
+                <div className="group h-full bg-cream border border-border rounded-2xl p-4 sm:p-6 hover:bg-white hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 cursor-default flex flex-col items-center text-center sm:items-start sm:text-left">
                   {/* Icon */}
-                  <div className="w-12 h-12 rounded-2xl bg-primary-soft flex items-center justify-center mb-5 group-hover:bg-primary/10 transition-colors duration-300">
-                    <Icon className="w-5 h-5 text-primary" aria-hidden="true" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-primary-soft flex items-center justify-center mb-3 sm:mb-5 group-hover:bg-primary/10 transition-colors duration-300 shrink-0">
+                    <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" aria-hidden="true" />
                   </div>
 
                   {/* Gold accent line */}
-                  <div className="w-8 h-0.5 bg-gold/50 mb-4" aria-hidden="true" />
+                  <div className="w-6 sm:w-8 h-0.5 bg-gold/50 mb-3 sm:mb-4" aria-hidden="true" />
 
-                  <h3 className="font-playfair text-lg font-semibold text-dark mb-2.5 leading-snug">
+                  <h3 className="font-playfair text-sm sm:text-lg font-semibold text-dark mb-1.5 sm:mb-2.5 leading-snug">
                     {card.title}
                   </h3>
-                  <p className="text-muted text-sm leading-relaxed">
+                  <p className="text-muted text-xs sm:text-sm leading-relaxed">
                     {card.description}
                   </p>
                 </div>

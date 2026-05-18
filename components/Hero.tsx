@@ -21,14 +21,14 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 container-content w-full pt-20 pb-8 md:pt-24 md:pb-6">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-6 xl:gap-12 items-center">
+      <div className="relative z-10 container-content w-full pt-20 pb-6 md:pt-24 md:pb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-3 xl:gap-12 items-center">
 
           {/* ── Left: Content ── */}
           <div className="order-2 lg:order-1">
 
             {/* Gold tag — centered on mobile */}
-            <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-3">
               <span className="w-8 h-px bg-gold lg:hidden" aria-hidden="true" />
               <span className="w-10 h-px bg-gold hidden lg:block" aria-hidden="true" />
               <span className="text-gold text-xs font-semibold tracking-[0.2em] uppercase">
@@ -38,28 +38,28 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-playfair text-[1.9rem] sm:text-4xl xl:text-[2.85rem] font-bold text-dark leading-[1.2] mb-4 text-center lg:text-left text-balance">
+            <h1 className="font-playfair text-[1.75rem] sm:text-4xl xl:text-[2.85rem] font-bold text-dark leading-[1.2] mb-3 text-center lg:text-left text-balance">
               Terapias personalizadas para{" "}
               <em className="text-primary not-italic">aliviar dores</em>,{" "}
               reduzir tensões e cuidar do seu bem-estar.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-muted text-base leading-relaxed mb-2.5 text-center lg:text-left mx-auto lg:mx-0 max-w-[22rem] lg:max-w-lg">
+            <p className="text-muted text-sm md:text-base leading-relaxed mb-2 text-center lg:text-left mx-auto lg:mx-0 max-w-[22rem] lg:max-w-lg">
               Massoterapia, drenagem linfática e terapias integrativas com
               atendimento humanizado, escuta cuidadosa e técnicas adaptadas ao
               que você está sentindo hoje.
             </p>
 
-            {/* Support text */}
-            <p className="text-muted/70 text-sm leading-relaxed mb-6 flex items-start justify-center lg:justify-start gap-2.5 text-center lg:text-left mx-auto lg:mx-0 max-w-[20rem] lg:max-w-md">
+            {/* Support text — oculto no mobile para ganhar espaço */}
+            <p className="hidden sm:flex text-muted/70 text-sm leading-relaxed mb-5 items-start justify-center lg:justify-start gap-2.5 text-center lg:text-left mx-auto lg:mx-0 max-w-[20rem] lg:max-w-md">
               <span className="w-4 h-px bg-gold shrink-0 mt-2" aria-hidden="true" />
               Atendimento com hora marcada em um espaço preparado para você
               relaxar e se cuidar.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3 mb-6">
+            <div className="flex flex-col sm:flex-row gap-2.5 mb-4 mt-3">
               <WhatsAppButton
                 label="Quero agendar pelo WhatsApp"
                 variant="primary"
@@ -92,22 +92,22 @@ export default function Hero() {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
 
             {/* ── Mobile image block ── */}
-            <div className="relative w-full max-w-[320px] block lg:hidden pb-6">
+            <div className="relative w-full max-w-[280px] block lg:hidden pb-6">
               <div
                 className="relative w-full overflow-hidden rounded-[24px] shadow-hero"
                 style={{
-                  aspectRatio: "4 / 3.2",
+                  aspectRatio: "4 / 3.8",
                   background: "linear-gradient(155deg, #FFFDF9 0%, #F8EAF0 55%, #FAF0D7 100%)",
                 }}
               >
                 <Image
-                  src="/images/rosangela.webp"
+                  src="/images/hero.webp"
                   alt="Rosangela da Silva — massoterapeuta com +11 anos de experiência em São José, SC"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: "50% 60%" }}
+                  style={{ objectPosition: "50% 20%" }}
                   priority
-                  sizes="95vw"
+                  sizes="80vw"
                 />
                 <div
                   className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#F8EAF0]/60 to-transparent pointer-events-none"
@@ -147,13 +147,13 @@ export default function Hero() {
               <div
                 className="relative w-full overflow-hidden rounded-[40px] shadow-hero"
                 style={{
-                  aspectRatio: "4 / 4.25",
+                  aspectRatio: "4 / 5.5",
                   background: "linear-gradient(155deg, #FFFDF9 0%, #F8EAF0 55%, #FAF0D7 100%)",
                 }}
               >
                 <div
                   className="absolute bottom-0 left-0 right-0"
-                  style={{ aspectRatio: "4 / 5" }}
+                  style={{ aspectRatio: "4 / 5.5" }}
                 >
                   <div
                     className="absolute inset-0 pointer-events-none"
@@ -164,11 +164,11 @@ export default function Hero() {
                     aria-hidden="true"
                   />
                   <Image
-                    src="/images/hero-pc.webp"
+                    src="/images/hero.webp"
                     alt="Rosangela da Silva — massoterapeuta com +11 anos de experiência em São José, SC"
                     fill
                     className="object-cover"
-                    style={{ objectPosition: "50% 80%" }}
+                    style={{ objectPosition: "50% 50%" }}
                     priority
                     sizes="(max-width: 1280px) 340px, 390px"
                   />

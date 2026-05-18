@@ -27,10 +27,10 @@ export default function Header() {
       <div className="container-content">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" aria-label="Início — Rô Terapia da Dor">
+          <a href="#" aria-label="Início — Rô Espaço Terapêutico">
             <Image
               src="/images/logo.webp"
-              alt="Rô Terapia da Dor"
+              alt="Rô Espaço Terapêutico"
               width={360}
               height={130}
               className="h-28 md:h-32 w-auto object-contain"

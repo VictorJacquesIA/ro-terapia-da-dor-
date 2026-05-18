@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <Image
               src="/images/logo.webp"
-              alt="Rô Terapia da Dor"
+              alt="Rô Espaço Terapêutico"
               width={380}
               height={140}
               className="h-32 w-auto object-contain mb-4 brightness-0 invert"
@@ -90,7 +90,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/30 text-xs">
-            © {year} Rô Terapia da Dor. Todos os direitos reservados.
+            © {year} Rô Espaço Terapêutico. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-2" aria-hidden="true">
             <div className="w-1.5 h-1.5 rounded-full bg-gold/30" />

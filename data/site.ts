@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Rô Terapia da Dor",
+  name: "Rô Espaço Terapêutico",
   professional: "Rosangela da Silva",
   tagline: "Massoterapia e Terapias Integrativas",
   address: "Rua Gentil Sandim, 261, Praia Comprida, São José, SC",
@@ -93,6 +93,8 @@ export const services = [
     highlight: "Ideal para quem precisa desacelerar",
     description:
       "Alivia o estresse, relaxa a musculatura e favorece uma sensação profunda de descanso e bem-estar.",
+    cta: "Quero relaxar de verdade",
+    whatsappMessage: "Olá, Rosangela! Gostaria de agendar uma sessão de Massagem Relaxante.",
   },
   {
     iconName: "hand",
@@ -100,6 +102,8 @@ export const services = [
     highlight: "Técnica manual personalizada",
     description:
       "Cuidado corporal com abordagem humanizada, voltado ao alívio de tensões e ao equilíbrio do corpo.",
+    cta: "Aliviar minhas tensões",
+    whatsappMessage: "Olá, Rosangela! Gostaria de agendar uma Massagem Terapêutica.",
   },
   {
     iconName: "droplets",
@@ -107,6 +111,8 @@ export const services = [
     highlight: "Também para gestantes",
     description:
       "Promove leveza corporal, auxilia na retenção de líquidos e contribui para o bem-estar geral.",
+    cta: "Quero me sentir mais leve",
+    whatsappMessage: "Olá, Rosangela! Gostaria de agendar uma sessão de Drenagem Linfática.",
   },
   {
     iconName: "zap",
@@ -114,6 +120,8 @@ export const services = [
     highlight: "Equilíbrio através dos pés",
     description:
       "Cuidado focado nos pés para promover relaxamento profundo, equilíbrio físico e sensação de renovação.",
+    cta: "Experimentar reflexologia",
+    whatsappMessage: "Olá, Rosangela! Gostaria de agendar uma sessão de Reflexologia Podal.",
   },
   {
     iconName: "leaf",
@@ -121,13 +129,17 @@ export const services = [
     highlight: "Cuidado integrativo e sensorial",
     description:
       "Aromas e óleos essenciais para apoiar o equilíbrio emocional, relaxamento e bem-estar.",
+    cta: "Quero esse equilíbrio",
+    whatsappMessage: "Olá, Rosangela! Gostaria de saber mais sobre a Terapia com Óleos Essenciais.",
   },
   {
     iconName: "calendar",
-    title: "Pacotes de Sessões",
+    title: "Planos de Tratamento",
     highlight: "Cuidado com constância",
     description:
       "Atendimento contínuo e personalizado para quem deseja manter uma rotina de cuidado regular.",
+    cta: "Conhecer os planos",
+    whatsappMessage: "Olá, Rosangela! Gostaria de conhecer os planos de tratamento disponíveis.",
   },
 ];
 
@@ -153,13 +165,13 @@ export const testimonials = [
   {
     quote:
       "Saí da sessão me sentindo mais leve, acolhida e relaxada. Um cuidado que vai além da massagem.",
-    author: "Cliente Rô Terapia da Dor",
+    author: "Cliente Rô Espaço Terapêutico",
     stars: 5,
   },
   {
     quote:
       "Um atendimento muito cuidadoso, profissional e feito com carinho. Me senti acolhida do início ao fim.",
-    author: "Cliente Rô Terapia da Dor",
+    author: "Cliente Rô Espaço Terapêutico",
     stars: 5,
   },
 ];
