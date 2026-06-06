@@ -1,3 +1,5 @@
+export const BASE_URL = "https://roespacoterapeutico.vercel.app";
+
 export const siteConfig = {
   name: "Rô Espaço Terapêutico",
   professional: "Rosangela da Silva",

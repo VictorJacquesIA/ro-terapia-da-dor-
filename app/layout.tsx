@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
+import { BASE_URL } from "@/data/site";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -15,8 +16,6 @@ const vietnam = Be_Vietnam_Pro({
   variable: "--font-vietnam",
   weight: ["300", "400", "500", "600", "700"],
 });
-
-const BASE_URL = "https://roespacoterapeutico.vercel.app";
 
 export const metadata: Metadata = {
   title: "Rô Espaço Terapêutico | Massoterapia e Terapias Integrativas em São José SC",
@@ -79,61 +78,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  name: "Rô Espaço Terapêutico",
-  description:
-    "Massoterapia, drenagem linfática, reflexologia podal e terapias integrativas com atendimento humanizado em São José, SC.",
-  url: BASE_URL,
-  telephone: "+5548999797222",
-  image: `${BASE_URL}/images/rosangela.webp`,
-  priceRange: "$$",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Rua Gentil Sandim, 261",
-    addressLocality: "São José",
-    addressRegion: "SC",
-    postalCode: "88103-650",
-    addressCountry: "BR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -27.603,
-    longitude: -48.621,
-  },
-  areaServed: {
-    "@type": "GeoCircle",
-    geoMidpoint: {
-      "@type": "GeoCoordinates",
-      latitude: -27.603,
-      longitude: -48.621,
-    },
-    geoRadius: "30000",
-  },
-  employee: {
-    "@type": "Person",
-    name: "Rosangela da Silva",
-    jobTitle: "Massoterapeuta",
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Serviços",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Massagem Relaxante" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Massagem Terapêutica" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Drenagem Linfática" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Reflexologia Podal" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Terapia com Óleos Essenciais" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Planos de Tratamento" } },
-    ],
-  },
-  sameAs: [
-    "https://www.instagram.com/ro_espacoterapeutico/",
-    "https://www.instagram.com/estetica_ro1/",
-  ],
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -141,12 +85,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${playfair.variable} ${vietnam.variable}`}>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body className="min-h-screen antialiased">{children}</body>
     </html>
   );
