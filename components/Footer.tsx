@@ -95,12 +95,12 @@ export default function Footer() {
             aria-label="Desenvolvido por V2 Digital"
           >
             <span className="text-white/60 text-[10px] tracking-wide uppercase">Desenvolvido por</span>
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/v2.png"
               alt="V2 Digital"
-              width={40}
-              height={20}
-              className="h-5 w-auto object-contain brightness-0 invert"
+              className="h-6 w-auto object-contain"
+              style={{ filter: "brightness(0) invert(1)" }}
             />
           </a>
         </div>
