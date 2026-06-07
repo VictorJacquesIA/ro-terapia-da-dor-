@@ -1,4 +1,4 @@
-export const BASE_URL = "https://roespacoterapeutico.vercel.app";
+export const BASE_URL = "https://www.roespacoterapeutico.com.br";
 
 export const siteConfig = {
   name: "Rô Espaço Terapêutico",
